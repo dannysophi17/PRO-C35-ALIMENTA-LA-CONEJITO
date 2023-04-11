@@ -51,14 +51,14 @@ function setup() {
   fruit = Bodies.circle(100,400,15,fruit_options);
   World.add(world,fruit);
   
-  bubble = createSprite(290,460,20,20);
+  bubble = createSprite(290,440,20,20);
   bubble.addImage(bubble_img);
   bubble.scale = 0.1;
   
   
   blink.frameDelay = 20;
   eat.frameDelay = 20;
-  bunny = createSprite(240,90,100,100);
+  bunny = createSprite(240,100,100,100);
   bunny.addImage(rabbit);
   bunny.scale = 0.2;
   higherground =new Ground(300,170,100,10);
@@ -68,7 +68,7 @@ function setup() {
   bunny.addAnimation('crying',sad);
   bunny.changeAnimation('blinking');
 
-  rope = new Rope(4,{x:230,y:330});
+  rope = new Rope(4,{x:200,y:330});
   rope2 = new Rope(4,{x:50,y:450});
   con = new Link(rope,fruit);
   con2 = new Link(rope2,fruit);
